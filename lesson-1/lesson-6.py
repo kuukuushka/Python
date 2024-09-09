@@ -30,13 +30,13 @@
 
 
 
-year = int(input("Год выпуска: "))
-speed = int(input("Количество скоростей: "))
+# year = int(input("Год выпуска: "))
+# speed = int(input("Количество скоростей: "))
 
-if year > 2018 and speed > 24:
-    print("Подходит")
-else:
-    print("Не подходит")
+# if year > 2018 and speed > 24:
+#     print("Подходит")
+# else:
+#     print("Не подходит")
 
 
 
@@ -58,3 +58,20 @@ else:
 # else:
 #     print("Температура в пределах нормы")
 
+
+
+# experience = 3000
+
+# # Какое значение переменной level должно быть задано изначально? 
+# level = 1 
+
+# # Проверки каких условий должна выполнить программа? Напишите их ниже.
+# if (experience >= 0) and (experience <= 1000):
+#     level += 1 
+# elif (experience > 1000) and (experience <= 6000):
+#     level += 2
+# else:
+#     level += 3
+
+    
+# print('Уровень персонажа:', level)
