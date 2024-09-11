@@ -42,19 +42,23 @@
 
 
 
-total_money = int(input("Всего денег: "))
-cheese = 60  
-ice_cream = 20
+# total_money = int(input("Всего денег: "))
+# cheese = 60  
+# ice_cream = 20
 
-if total_money >= cheese:
-    total_money -= cheese
-    print("На сыр денег хватило")
-    if total_money >= ice_cream:
-        print("И на мороженое тоже!")
-    else: 
-        print("Денег маловато")
-else:
-    print("Денег не хватило даже на сыр!")
+# if total_money >= cheese:
+#     total_money -= cheese
+#     print("На сыр денег хватило")
+#     if total_money >= ice_cream:
+#         print("И на мороженое тоже!")
+#     else: 
+#         print("Денег маловато")
+# else:
+#     print("Денег не хватило даже на сыр!")
+
+
+
+
 
 
 

@@ -92,6 +92,14 @@
 
 
 
+# count = 10
+# while count + 1: 
+#     print(count)
+#     count -= 1
+# print('Время вышло!')
+
+
+
 
 # while True:
 #     play = int(input("Продолжаем работать? 1/0: "))
@@ -102,11 +110,11 @@
 
 
 
-is_working = 1
-while is_working:
-    is_working = int(input("Продолжаем работать? 1/0: "))
+# is_working = 1
+# while is_working:
+#     is_working = int(input("Продолжаем работать? 1/0: "))
 
-print("Работа завершена")
+# print("Работа завершена")
 
 
 
