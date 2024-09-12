@@ -41,3 +41,55 @@
 
 
 # tusk_4
+
+# positive = 0
+# negative = 0 
+
+# while True:
+#     feedback = int(input("Введите число: "))
+#     if feedback > 0: 
+#         positive += 1
+#     elif feedback < 0:
+#         negative += 1
+#     else:
+#         break
+# print("Кол-во положительных чисел:", positive)
+# print("Кол-во отрицательных чисел:", negative)
+
+
+#tusk_5
+
+# print("Начался восьмичасовой рабочий день.")
+# time = 0
+# tusk = 0
+# wife = False
+
+# while time < 8:
+#     tusk += int(input("Сколько задач решит Максим? "))
+#     calls = int(input("Звонит жена. Взять трубку? (1 — да, 0 — нет): "))
+#     if calls == 1:
+#         wife = True
+#     time += 1
+# print("Рабочий день закончился. Всего выполнено задач:", tusk)
+# if wife == True:
+#     print("Нужно зайти в магазин.")
+
+
+
+
+#tusk_6
+
+# contribution = int(input("Какой вклад: "))
+# percent = int(input("Какой процент ? "))
+# final_percentage = int(input("Сколько хотите ? "))
+# time = 0
+
+# while final_percentage > contribution:
+#     percentage = contribution * percent // 100 
+#     contribution += percentage
+#     time += 1
+# print("Количество лет:", time)
+# print("Итоговая сумма:", contribution)
+
+
+
