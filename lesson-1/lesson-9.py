@@ -93,3 +93,37 @@
 
 
 
+
+#tusk_8
+
+def guess_number():
+    low = 1
+    high = 100
+    attempts = 0
+    
+    while low <= high:
+        mid = (low + high) // 2
+        print(f"Компьютер: Твоё число равно, меньше или больше, чем {mid}?")
+        response = int(input("Мальчик (1 - равно, 2 - больше, 3 - меньше): "))
+        
+        if response == 1:
+            print(f"Компьютер: Я угадал! Твоё число - {mid}.")
+            return mid
+        elif response == 2:
+            low = mid + 1
+        elif response == 3:
+            high = mid - 1
+        else:
+            print("Неверный ввод. Пожалуйста, введите 1, 2 или 3.")
+        
+        attempts += 1
+        if attempts > 7:
+            print("Не удалось угадать число за 7 попыток.")
+            return None
+
+# Запускаем игру
+guess_number()
+
+
+
+
