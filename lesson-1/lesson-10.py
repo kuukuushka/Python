@@ -53,18 +53,21 @@
 
 
 
-time = int(input("Во сколько вы проснулись? "))
-meal = 0
-summ_time = 0
+# time = int(input("Во сколько вы проснулись? "))
+# meal = 0
+# summ_time = 0
 
-for i in range(time, 23):
-    meal += int(input("Сколько калорий вы съели? "))
-    if meal > 2000:
-        print("Пора спать")
-        break
-    summ_time +=1
-print("Был бодрым:", summ_time)
-print("Съел калорий", meal)
+# for i in range(time, 23):
+#     meal += int(input("Сколько калорий вы съели? "))
+#     if meal > 2000:
+#         print("Пора спать")
+#         break
+#     summ_time +=1
+# print("Был бодрым:", summ_time)
+# print("Съел калорий", meal)
+
+
+
     
 
 
