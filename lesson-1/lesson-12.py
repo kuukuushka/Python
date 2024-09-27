@@ -1,8 +1,8 @@
-# n = int(input("Введите число: "))
-# summ = 0
-# for i in range(1, n//2 + 1):
-#     i *= 2
-#     print(i, "** 3 = ", i ** 3)
+n = int(input("Введите число: "))
+summ = 0
+for i in range(1, n//2 + 1):
+    i *= 2
+    print(i, "** 3 = ", i ** 3)
 
 
 
