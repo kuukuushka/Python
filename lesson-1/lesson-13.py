@@ -49,4 +49,112 @@
 
 
 
+# total_timer = int(input("Время таймера: "))
+
+# for reverse_timer in range(total_timer, 0, -1):
+#     print("Осталось", reverse_timer)
+#     end = int(input("Хотите забрать еду ? (1 - да, 0 - нет) "))
+#     if end == 1: 
+#         print("Ваша еда готова, можете забрать. Остановились на:", reverse_timer)
+#         break
+# if end != 1:
+#     print("Ваша еда готова, осторожно горячо!")
+
+
+
+
+# first = int(input("Введите первое число: "))
+# last = int(input("Введите второе Число: "))
+# multiples = int(input("Введите кратное число: "))
+# summ_namber = 0
+# summ_total = 0
+
+# for i in range(first, last + 1):
+#     if i % multiples == 0: 
+#         print(i)
+#         summ_namber += i 
+#         summ_total += 1 
+    
+# if summ_total == 0:
+#     print("Нет кртаных чисел")
+# else:
+#     print(summ_namber)
+#     print(summ_total)
+#     print("Среднеяя арифметическая", summ_namber / summ_total)
+
+
+
+
+# first = int(input("Введите начало отрезка: "))
+# last = int(input("Введите конец отрезка: "))
+# step = int(input("Введите шаг: "))
+# y = 0
+
+# for x in range(last, first - 1, step):
+#     y = x ** 3 + 2 * x ** 2 - 4 * x + 1
+#     print("В точке", x, "функция равна", y)
+
+
+
+
+
+# educational_grant = int(input("Введите стипендию: "))
+# expenses = int(input("Введите расходы на проживание: "))
+# summ = 0
+# summ_2 = 0
+# for i in range(1, 11):
+#     summ = expenses - educational_grant 
+#     summ_2 += summ
+#     print(i, "месяц траты", f"{expenses:.2f}", "не хватает", f"{summ_2:.2f}")
+#     expenses = expenses * 0.03 + expenses
+
+# print(f"Нужно попросить у родителей {summ_2:.2f} рублей.")
+
+    
+
+
+# N = int(input("Введите N: "))  # Запрашиваем ввод натурального числа N
+# total_sum = 0  # Инициализируем переменную для хранения суммы
+
+# # Используем цикл для вычисления элементов последовательности и их суммы
+# for n in range(N):
+#     element = (-1) ** n * (1 / 2) ** n  # Вычисляем текущий элемент
+#     total_sum += element  # Добавляем элемент к общей сумме
+
+# print(f"Ответ: {total_sum}")  # Выводим итоговую сумму
+
+
+
+
+
+# Получаем ввод данных
+X = int(input("Введите количество мальчиков: "))
+Y = int(input("Введите количество девочек: "))
+
+# Проверяем, если рассадить мальчиков и девочек невозможно
+if X > Y + 1 or Y > X + 1:
+    print("Нет решения")
+else:
+    result = []
+    total = X + Y  # Общее количество мест
+    for i in range(total):
+        if X > Y:  # Если мальчиков больше, сажаем мальчика
+            result.append('B')
+            X -= 1
+        elif Y > X:  # Если девочек больше, сажаем девочку
+            result.append('G')
+            Y -= 1
+        else:  # Если мальчиков и девочек поровну, чередуем
+            if i % 2 == 0:
+                result.append('B')
+                X -= 1
+            else:
+                result.append('G')
+                Y -= 1
+    # Выводим результат в виде строки
+    print(''.join(result))
+
+
+
+
 
