@@ -64,7 +64,42 @@
 
 
 
-text = "0"
+# print("-" * 10)
+# for _ in range(4):
+#     for i in range(10):
+#         if i == 0 or i == 9:
+#             print("|", end="")
+#         else:
+#             print("0", end="")
+#     print()
+# print("-" * 10)
 
-for i in range(10):
-    print(text, end="")
+
+
+
+# first = int(input("Первый член прогрессии: "))
+# step = int(input("Шаг прогрессии: "))
+# summ = first
+
+# print(first, end=".")
+# for i in range(2):
+#     first += step
+#     print(first, end=".")
+#     summ += first
+# print(summ)
+
+
+# first_number = int(input("Введите число: "))
+# print(end="-=-")
+# for i in range(0, first_number + 1, 10):
+#     print(i, end="-=-")
+
+
+
+text = "Enumerate в Python"
+for index, symbol in enumerate(text):
+    print("Символ", symbol, "находится на", index, "позиции в тексте")
+# Чтобы считать символы в привычном нам формате, 
+# начиная с единицы можно использовать параметр start
+for index, symbol in enumerate(text, start=1):
+    print("Символ", symbol, "находится на", index, "позиции в тексте")
