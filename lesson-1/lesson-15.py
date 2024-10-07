@@ -78,11 +78,62 @@
     
 
 
+# racks = input("Какие стойки заняты ?")
+# summ = 0
+# if len(racks) == 10:
+#     for index, i in enumerate(racks):
+#         milk = (index + 1) * 2 
+#         if i == "b":
+#             summ += milk
+#     print("Всего молока:", summ)
+# else: 
+#     print("Чисел не 10")
+
+
+
+
+# # Ввод зашифрованного сообщения
+# encrypted_message = input("Введите зашифрованное сообщение: ")
+
+# # Длина зашифрованного сообщения
+# length = len(encrypted_message)
+
+# # Инициализация списка для расшифрованного сообщения
+# decrypted_message = [''] * length
+
+# # Заполняем расшифрованное сообщение
+# for i in range(length):
+#     if i % 2 == 0:  # Нечётные индексы (1, 3, 5...)
+#         decrypted_message[i // 2] = encrypted_message[i]
+#     else:  # Чётные индексы (2, 4, 6...)
+#         decrypted_message[length - (i // 2) - 1] = encrypted_message[i]
+
+# # Преобразуем список в строку
+# decrypted_message = ''.join(decrypted_message)
+
+# # Вывод расшифрованного сообщения
+# print("Расшифрованное сообщение:", decrypted_message)
+
     
 
 
-        
 
+# Ввод строки от пользователя
+original_message = input("Введите фрагмент послания: ")
 
+# Убираем пробелы и приводим к нижнему регистру
+cleaned_message = original_message.replace(" ", "").lower()
 
+# Инициализируем переменную для развернутой строки
+reversed_message = ""
 
+# Проходим по каждому символу в строке и строим развернутую строку
+for char in cleaned_message:
+    reversed_message = char + reversed_message  # Добавляем символ в начало
+    print(reversed_message)
+
+# Сравниваем оригинальное сообщение с развернутым
+if cleaned_message == reversed_message:
+    print("Да, это палиндром!")
+else:
+    print("Нет, это не палиндром!")
